@@ -1,0 +1,211 @@
+/* General reset */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('../images/pets.jpg');
+    background-size: cover;        /* Makes the image cover the screen */
+    background-repeat: no-repeat;  /* Prevents tiling */
+    background-position: center;   /* Center the image */
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Container style */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.9); /* Transparent white */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+/* Header */
+h2 {
+    color: #3f72af;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styling */
+/* Make form look tight and clean */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Let buttons span full row */
+form button {
+    grid-column: 1 / -1;
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* For full-width inputs like Owner Name */
+.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Labels (optional, if you use them) */
+label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Smaller inputs */
+input, select {
+    padding: 8px;
+}
+
+/* Smaller container just for form pages */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Wrap and center the entire search area */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Modern inline search bar */
+.search-bar {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+/* Input box styling */
+.search-bar input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Button styling */
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3f72af;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #112d4e;
+}
+
+/* Responsive for mobile */
+@media (max-width: 500px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+    }
+}
+
+
+input, select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #3f72af;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #112d4e;
+}
+
+/* Links and List */
+a {
+    color: #3f72af;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f1f1f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+/* Search bar */
+form.search-bar[method="GET"] {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-with-suffix {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.input-with-suffix input {
+    width: 100%;
+    padding-right: 40px; /* make room for the "kg" text */
+    box-sizing: border-box;
+}
+
+.input-with-suffix .suffix {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    pointer-events: none;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+
